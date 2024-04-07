@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <div class="form">
+    <h1 id="title">Survey Forms</h1>
+    <p id="description">Thank you for answering these survey form</p>
+    <form id="survey-form">
+
+      <h3><label id="name-label">Name  </label><input id="name" class="question" type="text" required ></h3>
+
+      <h3><label id="email-label">Email  </label><input id="email" class="question" type="email" required ></h3>
+
+      <h3> <label id="number-label">Age         </label><input id="number" type="number" min="13" max="120" ></h3>
+<fieldset>
+<legend><h3>Which option best describes your current role?</h3></legend>
+<select id="dropdown"> 
+  <option value=" ">
+    (Select one)
+  </option>
+  <option value="1">Student</option>
+  <option value="2">Employee
+    
+  </option>
+</select>
+</fieldset>
+
+
+<h3>Would you recommend freeCodeCamp to a friend?</h3>
+<fieldset>
+  <label for="definetly">
+    <input type="radio" id="definetly" name="answer" class="inline" value="1" />Definetly
+  </label>
+
+  <label for="Maybe">
+     <input type="radio" id="Maybe" name="answer" class="inline" value="2"
+     >Maybe
+  </label>
+</fieldset>
+
+<h3>What would you like to see improved? (Check all that apply)</h3>
+<fieldset>
+  <label for="Challenges">
+   <input name="answers" value="3" type="checkbox" /> Challenges
+  </label>
+  
+  <label for="Videos">
+   <input value="4" type="checkbox"/> Videos
+  </label>
+</fieldset>
+
+<h3>Other suggestions</h3>
+<textarea rows="3" cols="30"placeholder="Enter your comments and suggestions here">
+</textarea>
+<input id="submit" type="Submit">
+    </form>
+
+    </div>
+  </body>
+</html>
